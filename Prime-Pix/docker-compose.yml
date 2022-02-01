@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    primepix:
+        ports:
+            - '5000:80'
+        image: bernavaguilherme/primepix
+        build:
+          context: .
+          dockerfile: Dockerfile
